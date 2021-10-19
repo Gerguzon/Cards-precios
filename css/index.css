@@ -1,0 +1,117 @@
+@import url(principal-card.css);
+@import url(secondary-card.css);
+@import url(atention.css);
+@import url(principal-button.css);
+@import url(secondary-button.css);
+
+:root {
+  --black: #373737; 
+  --primary: #ff8e3c; 
+  --white: #ffffff; 
+  --grey: #848199; 
+  --red: #fa513a; 
+  --grey-2: #a3a3a3; 
+  --bg: #f5f5fa; 
+  --headline2: 600 1.75rem/normal Poppins; 
+  --headline3: 600 1.25rem/1.375rem Poppins; 
+  --button: 400 0.875rem/1rem Poppins; 
+  --headline1: 600 3.5rem/normal Poppins; 
+  --body1-regular: 400 1rem/1.5rem Poppins; 
+  --body1-bold: 700 1rem/1.5rem Poppins; 
+  --body2-bold: 700 0.875rem/1.5rem Poppins; 
+  --body2-regular: 400 0.875rem/1.5rem Poppins; 
+  --caption-regular: 400 0.75rem/1rem Poppins; 
+  --caption-bold: 600 0.75rem/1rem Poppins; 
+  
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--black);
+  background-color: var(--bg);
+  font-size: 62.5%;
+}
+
+header {
+  width: 100%;
+  height: 148px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+header h1 {
+  font: var(--headline2);
+}
+
+header p {
+  font: var(--body1-regular);
+  color: var(--grey);
+}
+
+.prices-cards-container {
+  width: 100%;
+  height: auto;
+
+}
+
+.secondary-card ul .opacity {
+  opacity: 100%;
+}
+
+@media  (min-width:1000px){
+  header {
+    margin: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    font: var(--headline1);
+  }
+
+  main {
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center
+  }
+
+  .prices-cards-container {
+    width: 1192px;
+    height: 490px;
+    background-color: var(--white);
+    border-radius: 26px;
+    display: flex;;
+  
+  }
+
+.prices-cards-container .card {
+    height: 490px;
+    margin: 0;
+  }
+
+.prices-cards-container .secondary-card {
+    height: 480px;
+    margin: 0;
+  }
+ 
+.prices-cards-container div:nth-child(1) {
+    order: 1;
+  }
+.prices-cards-container div:nth-child(4) {
+    order: 2;
+  }
+
+}

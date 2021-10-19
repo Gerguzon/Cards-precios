@@ -1,0 +1,64 @@
+.prices-cards-container .card {
+    width: 298px;
+    height: 480px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    padding: 0 29px;
+    padding-top: 53px;
+    background-color: var(--primary);
+    border-radius: 26px;
+}
+
+.prices-cards-container .card:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 4px 10px 4px var(--grey);
+    z-index: 2;
+}
+
+.card .card-information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 16px;
+}
+  
+.card .price {
+    font: var(--headline2);
+}
+  
+.card .price span {
+    font: var(--body2-regular);
+}
+  
+.card .plan-name {
+    font: var(--headline2);
+    margin-bottom: 10px;
+}
+  
+.card .description {
+    font: var(--body1-regular);
+}
+  
+.card ul {
+    font: var(--body2-regular);
+}
+  
+.card ul li {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 10px;
+}
+  
+.card ul li .check-icon {
+display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../icons/Path.svg');
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-color: #fda96d;
+    border-radius: 50%;
+    
+}

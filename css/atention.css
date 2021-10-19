@@ -1,0 +1,14 @@
+.card .atention {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 121px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: var(--caption-bold);
+    background-color: #FFD5B6;
+    border-radius: 18px;
+  
+  }

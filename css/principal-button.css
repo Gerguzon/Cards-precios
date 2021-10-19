@@ -1,0 +1,15 @@
+.principal-button {
+    width: 234px;
+    height: 48px;
+    border: none;
+    border-radius: 90px;
+    background-color: var(--black);
+    font: var(--body1-bold);
+    color: var(--white);
+  }
+
+.principal-button:hover {
+  transform: scale(1.1);
+  background-color: var(--white);
+  color: black;
+}

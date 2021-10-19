@@ -1,0 +1,15 @@
+.secondary-button {
+    width: 234px;
+    height: 48px;
+    border: none;
+    border-radius: 90px;
+    background-color: rgba(255, 142, 60, 0.1);
+    font: var(--body1-bold);
+    color: var(--primary);
+}
+
+.secondary-button:hover {
+    transform: scale(1.1);
+    background-color: var(--primary);
+    color: var(--white);
+  }
