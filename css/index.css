@@ -64,16 +64,15 @@ header p {
   opacity: 100%;
 }
 
-@media  (min-width:1000px){
+@media  (min-width:700px){
   header {
     margin: 0;
     padding-top: 14px;
     padding-bottom: 14px;
-    padding-left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
   }
 
   header h1 {
@@ -82,35 +81,76 @@ header p {
 
   main {
     display: inline-block;
-    width: 100vw;
+    width: 100%;
     height: auto;
-    display: flex;
-    justify-content: center
+    
+    
   }
 
   .prices-cards-container {
-    width: 1192px;
-    height: 490px;
+    max-width: 700px;
+    height: auto;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
     background-color: var(--white);
     border-radius: 26px;
-    display: flex;;
-  
+    margin: 0 auto;
+    margin-bottom: 24px ;
+    
+  }
+
+  .secondary-card .card-information {
+    justify-content: center;
+  }
+
+  .card .card-information {
+    justify-content: center;
+  }
+
+  .card-information div {
+    text-align: center;
   }
 
 .prices-cards-container .card {
-    height: 490px;
-    margin: 0;
+  width: auto;
+  margin: 0;   
+  font-size: 10px;
   }
 
 .prices-cards-container .secondary-card {
-    height: 480px;
-    margin: 0;
+  width: auto;
+  height: auto; 
+  margin: 0;
+  font-size: 10px;
+
   }
  
-.prices-cards-container div:nth-child(1) {
+}
+
+@media  (min-width:1040px){
+  header {
+    margin-bottom: 24px;
+  }
+
+
+  main {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+  .prices-cards-container {
+    max-width: 1200px;
+    background-color: var(--white);
+    border-radius: 26px;
+    display: flex;
+  }
+
+  .prices-cards-container div:nth-child(1) {
     order: 1;
   }
-.prices-cards-container div:nth-child(4) {
+
+  .prices-cards-container div:nth-child(4) {
     order: 2;
   }
 
